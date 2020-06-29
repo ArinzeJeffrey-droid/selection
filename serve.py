@@ -20,6 +20,10 @@ import codecs
 from os import system
 from backtester import bt
 from flask import Flask
+import requests 
+from bs4 import BeautifulSoup 
+import csv 
+import pandas as pd 
 
 
 app = Flask(__name__)
@@ -33,4 +37,4 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", debug=True)
+    app.run(port=5000, debug=True)
